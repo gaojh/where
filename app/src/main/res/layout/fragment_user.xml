@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context="com.gao.app.where.fragment.FragmentUser">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99CC33"
+            android:orientation="vertical">
+
+            <com.gao.app.where.view.RoundAngleImageView xmlns:app="http://schemas.android.com/apk/res/com.gao.app.where"
+                android:id="@+id/login_user_img"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/userlogo"
+                app:roundHeight="10dp"
+                app:roundWidth="10dp" />
+
+            <TextView
+                android:id="@+id/login_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:text="使用QQ登录"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/login_textview_selector" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
